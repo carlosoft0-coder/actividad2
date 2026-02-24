@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Universidad Privada Domingo Savio</title>
+  <style>
+    body {
+      background-image: url('imagenes/arco.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #222;
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+    }
+
+    header {
+      background: linear-gradient(90deg, #006400, #00a86b);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      text-decoration: underline;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+
+    main {
+      padding: 40px 15%;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      margin: 40px auto;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #006400;
+      border-left: 5px solid #00a86b;
+      padding-left: 10px;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #004d00;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      letter-spacing: 0.5px;
+    }
+
+    /* 🔹 ESTILO FORMULARIO */
+    form {
+      max-width: 500px;
+      margin: 30px auto;
+      text-align: left;
+      background-color: #f0f8f5;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #0b6623;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #0b6623;
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="reset"] {
+      background-color: #888;
+      margin-left: 10px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #004d00;
+      transform: scale(1.05);
+    }
+
+    input[type="reset"]:hover {
+      background-color: #555;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>UNIVERSIDAD PRIVADA DOMINGO SAVIO</h1>
+    <h2>ACTIVIDAD 2 - DISEÑO WEB</h2>
+  </header>
+
+  <main>
+    <h2>Datos personales</h2>
+    <p><strong>Carlos Arturo Rosales Conde</strong></p>
+    <p>Ingeniería de Sistemas</p>
+    <p>5to Semestre</p>
+
+    <div style="text-align:center;">
+      <img src="imagenes/yo.jpg" alt="Foto de Carlos Arturo Rosales" width="200" style="border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+    </div>
+
+    <!-- 🔹 FORMULARIO -->
+    <h2>Formulario de Contacto</h2>
+    <form action="#" method="post">
+
+      <label for="nombre"><strong>Nombre completo:</strong></label><br>
+      <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required><br>
+
+      <label for="correo"><strong>Correo institucional:</strong></label><br>
+      <input type="email" id="correo" name="correo" placeholder="ejemplo@upds.net.bo" required><br>
+
+      <label for="carrera"><strong>Carrera:</strong></label><br>
+      <select id="carrera" name="carrera" required>
+        <option value="">Seleccione su carrera</option>
+        <option value="sistemas">Ingeniería de Sistemas</option>
+        <option value="software">Ingeniería de Software</option>
+        <option value="telecom">Ingeniería en Telecomunicaciones</option>
+        <option value="industrial">Ingeniería Industrial</option>
+      </select><br>
+
+      <label><strong>Modalidad:</strong></label><br>
+      <input type="radio" id="presencial" name="modalidad" value="presencial" required> 
+      <label for="presencial">Presencial</label><br>
+      <input type="radio" id="virtual" name="modalidad" value="virtual">
+      <label for="virtual">Virtual</label><br><br>
+
+      <label for="mensaje"><strong>Mensaje:</strong></label><br>
+      <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta o comentario"></textarea><br>
+
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpiar">
+
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 - CARLOS ARTURO ROSALES CONDE - TODOS LOS DERECHOS RESERVADOS</p>
+  </footer>
+</body>
+</html>
